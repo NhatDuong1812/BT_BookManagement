@@ -47,6 +47,14 @@ public class Method {
         }
         tongtien = tongtienFTB + tongtienPRB;
         System.out.println("Tong tien la: " + tongtien + "VND");
+
+        for (ProgrammingBook prB:programmingBooks ) {
+            if (prB.language.equals("java")){
+                int i = 1 ;
+                System.out.println(i++ + prB.toString());
+
+            }//System.out.println( i++ +"So luong sach co ngon ngu java la: ");
+        }
     }
 
     public void searchPGB(String name){
@@ -65,6 +73,8 @@ public class Method {
             }
         }
     }
+
+ 
 
 
 
